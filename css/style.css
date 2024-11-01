@@ -37,29 +37,29 @@ body{
     overflow-x: hidden;
 }
 
-#esquerdinha{
+.esquerdinha{
     grid-column: 1/2;
     border-radius: 20px;
-    animation: slideContentRight 1.3s 1 ease-in-out;
+    animation: slideContentRight 1.2s 1 ease-out;
 }
 
-#esquerdinha h1{
+.esquerdinha h1{
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 40px;
 }
 
-#esquerdinha h3{
+.esquerdinha h3{
     font-size: 24px;
     font-weight: normal;
 }
 
-#direitinha{
+.direitinha{
     grid-column: 2/3;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: slideContentLeft 1.3s 1 ease-in-out;
+    animation: slideContentLeft 1.2s 1 ease-out;
 }
 
 #solution-container{
@@ -170,56 +170,71 @@ body{
 #time{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 50px;
-    max-width: 100%;
-    height: 100vh;
     background-color: #083040;
+    padding: 50px;
+}
+
+#time h1{
+    font-size: 40px;
     color: white;
-    padding: 40px 0 0;
 }
 
-#title-time{
-    font-size: 48px;
+.time{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 250px);
+    gap: 16px;
 }
 
-#time-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    padding: 0 100px;
-}
-
-.time-lado{
+.time-content{
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
-    width: 500px;
+    align-items: center;
+    background-color: #CECECE;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: black;
 }
 
-.time-lado h1{
+.time-content h2{
+    padding: 10px 0 0;
     font-size: 36px;
+    font-weight: 400;
+    
 }
 
-.time-lado h3{
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: lighter;
+.time-content h3{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 0 5px;
 }
 
-#fotos-content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    width: 100%;
+.time-content p{
+    padding: 15px;
+}
+
+.time-content hr{
+    background-color: black;
+    border: none;
+    width: 220px;
+    height: 1px;
+}
+
+.time-content:hover{
+    scale: 1.05;
+}
+
+.time-img{
     height: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
-.fotos{
-    height: 200px;
-    width: 200px;
+.time-img:hover{
+    scale: 1.05;
 }
 
 footer {
@@ -297,7 +312,7 @@ footer p {
 
 @keyframes slideContentRight {
     0%{
-        transform: translateX(-100%);
+        transform: translateX(-150%);
         opacity: 0;
     }
     100%{
@@ -308,7 +323,7 @@ footer p {
 
 @keyframes slideContentLeft {
     0%{
-        transform: translateX(100%);
+        transform: translateX(150%);
         opacity: 0;
     }
     100%{

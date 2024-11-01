@@ -40,4 +40,6 @@ header nav{
     grid-column: 5/8;
     background-image: url(/img/bgl.png);
     background-position-y: -150px;
+    background-position-x: 20px;
+    background-repeat: no-repeat;
 }

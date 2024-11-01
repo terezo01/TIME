@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="icon" href="">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
     <div id="big-img">
         <div id="blur">
             <section id="home">
-                <div id="esquerdinha">
+                <div class="esquerdinha" id="esquerdinha">
                     <h1>Produtividade e Segurança</h1>
                     <h3>
                         Produtividade e segurança no trabalho são essenciais para o sucesso organizacional.
@@ -35,10 +36,13 @@
                         garante a proteção física e mental dos funcionários.
                     </h3>
                 </div>
-                <div id="direitinha">
+                <div class="direitinha" id="direitinha">
                     <div id="solution-container">
                         <h2>Transforme sua Vida Financeira e Pessoal</h2>
-                        <p>Enfrentar desafios como dívidas e procrastinação pode ser estressante. Estamos aqui para ajudar! Nossa IA oferece soluções práticas e personalizadas em finanças pessoais e produtividade, guiando você a desenvolver hábitos saudáveis e alcançar suas metas. Junte-se a nós e comece sua transformação!</p>
+                        <p>Enfrentar desafios como dívidas e procrastinação pode ser estressante. Estamos aqui para
+                            ajudar! Nossa IA oferece soluções práticas e personalizadas em finanças pessoais e
+                            produtividade, guiando você a desenvolver hábitos saudáveis e alcançar suas metas. Junte-se
+                            a nós e comece sua transformação!</p>
                         <a href="/pages/solução-page.html" id="solution-button">Conheça nossa solução</a>
                     </div>
                 </div>
@@ -73,26 +77,37 @@
         </div>
     </section>
     <section id="time">
-        <h1 id="title-time">Sobre nós</h1>
-        <div id="time-content">
-            <div class="time-lado">
-                <h3>Bem-vindo ao nosso site! Somos Théo Tonin, Isaac Geiss, Mathias Lopez e Eloah Carvalho, um grupo de
-                    jovens de 16 a 17 anos apaixonados por tecnologia. Desenvolvemos uma inteligência artificial que
-                    ajuda as pessoas a enfrentar inseguranças financeiras e a melhorar a produtividade.
-                    <br><br>
-                    Acreditamos que a tecnologia pode transformar vidas, oferecendo orientações práticas e acessíveis.
-                    Estamos empolgados em compartilhar nossa jornada e esperamos que nossa IA se torne um recurso
-                    valioso para você!
-                </h3>
-            </div>
-            <div class="time-lado">
-                <div id="fotos-content">
-                    <img src="" alt="" - class="fotos">
-                    <img src="" alt="" class="fotos">
-                    <img src="" alt="" class="fotos">
-                    <img src="" alt="" class="fotos">
-                </div>
-            </div>
+        <h1>Our Team</h1>
+
+        <div class="time">
+            <img src="img/Théo.png" alt="" class="time-img">
+            <a class="time-content" href="https://www.instagram.com/theo_tonin?igsh=ZjNnbGlic2J4Nzhq&utm_source=qr">
+                <h2>Théo</h2>
+                <h3>programador </h3>
+                <hr>
+                <p>Meu nome é Theo Fernando Monteiro Pereira Tonin, estudo desde 2024 na FIAP School, estou responsável pela programação do nosso site</p>
+            </a>
+            <img src="img/mathias.png" alt="" class="time-img">
+            <a class="time-content" href="">
+                <h2>Mathias</h2>
+                <h3>front-end</h3>
+                <hr>
+                <p>Meu nome é Mathias Paulino de Mello Lopez, estudo tecnoloia na fiap, gosto de  desing e front-end.</p>
+            </a>
+            <a class="time-content" href="">
+                <h2>Murilo</h2>
+                <h3>IA machine learning</h3>
+                <hr>
+                <p>Meu nome é Murilo Tavares Cassetti, nesse projeto auxiliei na parte criativa e de design, mas a função principal a ser designada foi o machine learning do nosso chat-bot!</p>
+            </a>
+            <img src="img/murilo.png" alt="" class="time-img">
+            <a class="time-content" href="">
+                <h2>Eloah</h2>
+                <h3>desingner</h3>
+                <hr>
+                <p>Meu nome é Eloah Carvalho Kupty Landim, sou aluna da fiap school e gosto muito de desing.</p>
+            </a>
+            <img src="img/eloah.png" alt="" class="time-img">
         </div>
     </section>
 
@@ -108,12 +123,24 @@
         window.onscroll = function () {
             const header = document.getElementById('header');
             const up = document.getElementById('hide-up');
+
+            const esquerdinha = document.getElementById('esquerdinha');
+            const direitinha = document.getElementById('direitinha');
             if (window.scrollY > 10) {
                 up.classList.add('up');
                 up.classList.remove('hide-up');
             } else {
                 up.classList.remove('up');
                 up.classList.add('hide-up');
+            }
+
+            if(window.scrollY > 600){
+                esquerdinha.classList.remove('esquerdinha')
+                direitinha.classList.remove('direitinha')
+            }
+            else{
+                esquerdinha.classList.add('esquerdinha')
+                direitinha.classList.add('direitinha')
             }
         };
     </script>
