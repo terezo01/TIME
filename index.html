@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="pt-BR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtividade e segurança</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="index.html">T.I.M.E.</a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#links">Matérias</a>
+            <a href="#time">Time</a>
+        </nav>
+        <a href="/pages/solução-page.html" id="chat-btn">CHAT BOT</a>
+    </header>
+    <div id="big-img">
+        <div id="blur">
+            <section id="home">
+                <div id="esquerdinha">
+                    <h1>Produtividade e Segurança</h1>
+                    <h3>
+                        Produtividade e segurança no trabalho são essenciais para o sucesso organizacional.
+                        A produtividade envolve a realização eficiente de tarefas, enquanto a segurança
+                        garante a proteção física e mental dos funcionários.
+                    </h3>
+                </div>
+                <div id="direitinha">
+                    <div id="solution-container">
+                        <h2>Transforme sua Vida Financeira e Pessoal</h2>
+                        <p>Enfrentar desafios como dívidas e procrastinação pode ser estressante. Estamos aqui para ajudar! Nossa IA oferece soluções práticas e personalizadas em finanças pessoais e produtividade, guiando você a desenvolver hábitos saudáveis e alcançar suas metas. Junte-se a nós e comece sua transformação!</p>
+                        <a href="/pages/solução-page.html" id="solution-button">Conheça nossa solução</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <section id="links">
+        <div id="fru-fru">
+            <h1 class="topico">Matérias</h1>
+            <div class="materias">
+                <a class="materia" href="/pages/link1-page.html">
+                    <img src="img/texto 1.png" alt="" id="img-1">
+
+                    <div class="materia-text">
+                        <h1>Insegurança Financeira e Estresse</h1><br>
+                        <h3>Se as preocupações com o futuro estão pesando, talvez seja hora de explorar caminhos para
+                            trazer
+                            mais equilíbrio e tranquilidade à sua vida financeira.
+                        </h3>
+                    </div>
+                </a>
+                <a class="materia" href="/pages/link2-page.html">
+                    <img src="img/texto 2.png" alt="">
+                    <div class="materia-text">
+                        <h1>Produtividade e Baixos Salários</h1><br>
+                        <h3>Se a sua motivação está em baixa, pode ser hora de refletir sobre como o reconhecimento e a
+                            valorização podem transformar sua experiência no trabalho
+                        </h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="time">
+        <h1 id="title-time">Sobre nós</h1>
+        <div id="time-content">
+            <div class="time-lado">
+                <h3>Bem-vindo ao nosso site! Somos Théo Tonin, Isaac Geiss, Mathias Lopez e Eloah Carvalho, um grupo de
+                    jovens de 16 a 17 anos apaixonados por tecnologia. Desenvolvemos uma inteligência artificial que
+                    ajuda as pessoas a enfrentar inseguranças financeiras e a melhorar a produtividade.
+                    <br><br>
+                    Acreditamos que a tecnologia pode transformar vidas, oferecendo orientações práticas e acessíveis.
+                    Estamos empolgados em compartilhar nossa jornada e esperamos que nossa IA se torne um recurso
+                    valioso para você!
+                </h3>
+            </div>
+            <div class="time-lado">
+                <div id="fotos-content">
+                    <img src="" alt="" - class="fotos">
+                    <img src="" alt="" class="fotos">
+                    <img src="" alt="" class="fotos">
+                    <img src="" alt="" class="fotos">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contato: (11) 1234-5678</p>
+        <p>Rua Lins de Vasconcelos, 1222 - São Paulo, São Paulo</p>
+        <p>&copy; 2024 T.I.M.E. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="#" id="hide-up"><i class="bi bi-caret-up-fill"></i></a>
+
+    <script>
+        window.onscroll = function () {
+            const header = document.getElementById('header');
+            const up = document.getElementById('hide-up');
+            if (window.scrollY > 10) {
+                up.classList.add('up');
+                up.classList.remove('hide-up');
+            } else {
+                up.classList.remove('up');
+                up.classList.add('hide-up');
+            }
+        };
+    </script>
+</body>
+
+</html>
