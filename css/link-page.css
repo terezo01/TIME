@@ -7,25 +7,17 @@ body{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background-image: url(/img/Vector\ 2.png);
-    background-position-x: -70px;
+    background-image: url(/img/link-page-vec.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #083040;
     color: white;
-    height: 100vh;
-    overflow: hidden;
+    height: auto;
 }
 
-header nav{
-    margin-right: 17px;
-}
-
-#chat-btn{
-    margin-right: 17px;
-}
 
 #content{
-    padding: 120px 50px 0 300px;
+    padding: 120px 180px 50px 220px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,11 +26,25 @@ header nav{
 
 h1{
     margin: 0 0 10px;
-    font-size: 36px;
+    font-size: 40px;
 }
 
 p{
-    margin: 5px 5px;  
-    font-size: 17px;
+    text-indent: 40px;
+    margin: 10px 10px;  
+    font-size: 20px;
 }
 
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: medium;
+}

@@ -5,6 +5,7 @@
 
 ::-webkit-scrollbar {
     width: 17px;
+    background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -43,8 +44,13 @@ header{
     z-index: 1;
     left: 0;
     top: 0;
-    max-height: 100px;
+    height: 100px;
     width: 100%;
+    transition: all 0.5s ease;
+}
+
+header:hover{
+    background-color: rgba(0, 0, 0, 1);
 }
 
 header nav{

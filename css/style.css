@@ -137,6 +137,7 @@ body{
     box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: all 1s ease;
+    perspective: 1000px;
 }
 
 .materia-text{
