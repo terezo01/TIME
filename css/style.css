@@ -33,7 +33,7 @@ body{
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 80px;
     overflow-x: hidden;
 }
 
@@ -101,11 +101,11 @@ body{
 }
 
 #fru-fru{
-    padding: 50px 0 50px;
+    padding: 0 0 30px;
     background-image: url(/img/Group\ 15\ \(2\).png);
     background-repeat: no-repeat;
-    background-position-y: -200px;
-    height: 90vh;
+    background-position: center;
+    height: 100vh;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -115,6 +115,7 @@ body{
 }
 
 .topico{
+    margin: 120px 0 50px 0;
     font-size: 50px;
     font-weight: bold;
 }
@@ -132,12 +133,11 @@ body{
     text-decoration: none;
     background: white;
     color: rgb(56, 56, 56);
-    width: 400px;
+    width: 500px;
     border-radius: 15px;
     box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: all 1s ease;
-    perspective: 1000px;
 }
 
 .materia-text{
@@ -150,7 +150,7 @@ body{
 
 .materia img{
     width: 103%;
-    height: 250px
+    height: 300px
 }
 
 .materia:hover{
